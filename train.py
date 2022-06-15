@@ -10,7 +10,7 @@ from PIL import Image
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # TOGGLE THE ERROR BY SETTING A LARGER image_size
-image_size = 250
+image_size = 400 
 
 
 def load_image(image_path, image_size):
@@ -96,3 +96,4 @@ for step in range(1, total_steps+1):
 
     if step == total_steps:
         save_image(noise_image, "generated.png")
+        print("Image Saved")
