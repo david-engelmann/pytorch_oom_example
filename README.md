@@ -15,9 +15,9 @@ docker build -t pytorch_oom_example:1 .
 
 # Start the Container
 From Docker Desktop / cli create a container with the image
-    From the Docker Desktop, navigate to the images section and press run on the image created in the previous step
+    : From the Docker Desktop, navigate to the images section and press run on the image created in the previous step
 
-    From the command line, use the "docker run" command to start a container ie.
+    : From the command line, use the "docker run" command to start a container ie.
 
 ```
 docker run pytorch_oom_example:1
@@ -25,9 +25,9 @@ docker run pytorch_oom_example:1
 
 # Execute the train.py file
 Once the container is up and running, get a cli from the container.
-    From Docker Desktop, go to the containers section, select the container you started in the previous setup and click on the ">_" / cli button to get a command line from within the container
+    : From Docker Desktop, go to the containers section, select the container you started in the previous setup and click on the ">_" / cli button to get a command line from within the container
 
-    From the command line, use "docker ps" to get the ContainerID, then run the `docker exec -it` command to get a command line from within the container
+    : From the command line, use "docker ps" to get the ContainerID, then run the `docker exec -it` command to get a command line from within the container
 
 ```
 docker exec -it ContainerID /bin/sh
