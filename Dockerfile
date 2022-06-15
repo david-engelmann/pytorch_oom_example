@@ -38,4 +38,4 @@ RUN pip3 install --upgrade pip setuptools wheel \
 
 RUN alias python=python3
 
-CMD ["/bin/bash"]
+CMD ["python", "/workspaces/pytorch_oom_example/train.py"]
